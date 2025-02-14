@@ -1,0 +1,86 @@
+/* Estilos generales */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #ffdde1;
+    margin: 0;
+    overflow: hidden;
+    position: relative;
+    font-family: 'Arial', sans-serif;
+}
+
+.message img {
+    width: 50%;  /* Ajusta el tamaño de la imagen */
+    height: auto; /* Mantiene las proporciones de la imagen */
+}
+
+/* Responsive - Estilos para pantallas pequeñas */
+@media (max-width: 768px) {
+    body {
+        padding: 20px;
+    }
+
+    .container {
+        width: 80%;
+        height: auto;
+        margin-top: 20px;
+    }
+
+    .message {
+        font-size: 18px;
+        width: 90%;
+    }
+
+    .intro-text {
+        font-size: 22px;
+        top: 5%;
+    }
+
+    .flap {
+        border-left: 150px solid transparent;
+        border-right: 150px solid transparent;
+        border-top: 100px solid #a50000;
+    }
+
+    .triangle-bottom {
+        border-left: 150px solid transparent;
+        border-right: 150px solid transparent;
+        border-bottom: 100px solid #d32f2f;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        padding: 10px;
+    }
+
+    .container {
+        width: 100%;
+        height: auto;
+        margin-top: 10px;
+    }
+
+    .message {
+        font-size: 14px;
+        width: 90%;
+    }
+
+    .intro-text {
+        font-size: 18px;
+        top: 2%;
+    }
+
+    .flap {
+        border-left: 120px solid transparent;
+        border-right: 120px solid transparent;
+        border-top: 80px solid #a50000;
+    }
+
+    .triangle-bottom {
+        border-left: 120px solid transparent;
+        border-right: 120px solid transparent;
+        border-bottom: 80px solid #d32f2f;
+    }
+}
